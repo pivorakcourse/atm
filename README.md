@@ -33,12 +33,12 @@ accounts:
     balance: 5301
 ```
 
-Then, we run the program passing that configuration file
+We run the app by passing the location of this configuration file as an argument to the program
 ```
   ruby atm.rb config.yml
 ```
 
-Here is one of programs possible application flows:
+Here’s one of possible application flows:
 
 ```bash
 Please Enter Your Account Number:
@@ -70,7 +70,7 @@ Enter Amount You Wish to Withdraw:
 ERROR: INSUFFICIENT FUNDS!! PLEASE ENTER A DIFFERENT AMOUNT:
 > 420
 
-ERROR: THE MAXIMUM AMOUNT ATM CAN WITHDRAW IS ₴337. PLEASE ENTER A DIFFERENT AMOUNT:
+ERROR: THE MAXIMUM AMOUNT AVAILABLE IN THIS ATM IS ₴337. PLEASE ENTER A DIFFERENT AMOUNT:
 > 329
 
 ERROR: THE AMOUNT YOU REQUESTED CANNOT BE COMPOSED FROM BILLS AVAILABLE IN THIS ATM. PLEASE ENTER A DIFFERENT AMOUNT:
